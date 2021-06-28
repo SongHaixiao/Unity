@@ -1,11 +1,11 @@
 OSXUniversal
 PlayerPath?
-/Users/benjiaminsong/Unity/Unity Project/Flappy Bird/Demo.app
+/Users/benjiaminsong/Desktop/1.app
 SceneListBegin?
 Assets/Scenes/Main.unity
 SceneListEnd?
 3c08375166df118bd1801438fc36b92f Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
-7beca4d04f4785430d00ecc191c6c9ea Assembly-CSharp.dll:.PipelineManager
+a7c97845d1edf871c4ba71a4a31024cb Assembly-CSharp.dll:.PipelineManager
 77c21079ace8d76ce6e941d3dabbfe6e Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -131,7 +131,7 @@ e0ee4b3d4e27318934cc940a969d3d96 UnityEngine.Networking.dll:UnityEngine.Networki
 ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 9b895dcabbc1faf095c000c32d471fd0 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-41dc6c8cb6ff9531705c8a297dde8405 Assembly-CSharp.dll:.Game
+4a88d0da607b20fffbb361cfd07b2b9a Assembly-CSharp.dll:.Game
 a9f049c3dc82bb36fdb142e4d6a2658d Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
 e1300922cc039f41ab46a47f4cb05898 Unity.TextMeshPro.dll:TMPro.TMP_Settings
 88cc9df3c6fc697bfbeacd24c0d6f2d7 UnityEngine.TestRunner.dll:UnityEngine.TestTools.BeforeAfterTestCommandState
@@ -152,8 +152,11 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 507174d46dacbc5fe45e28485db5dd1e Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 3fc5245ef23ecb4e57666e43e606cfe4 Assembly-CSharp.dll:.Pipeline
-b9fe7a25ea1b461544923d25b1815cdb Assembly-CSharp.dll:.Player
+e65e56e94547f7a798f16adf76bc932c Assembly-CSharp.dll:.Player
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 df434544c9f7b33d1cc7e635b180d279 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
+3789ba0ceed0fb7b30853271a0c7de9e Assembly-CSharp.dll:.Element
+aedaa5170c626a1f31c0fa929b22f9e3 Assembly-CSharp.dll:.Enemy
+5893563f45a0c483c29c2ab13952abbc Assembly-CSharp.dll:.UnitManager

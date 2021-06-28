@@ -16,6 +16,8 @@ public class Game : MonoBehaviour
     public Text uiScore;    // score text in game
     public Text uiScore2;   // score text in end
 
+    public Slider hpBar;    // hp bar slider
+
     public int Score
     {
         get { return score; }
@@ -27,7 +29,8 @@ public class Game : MonoBehaviour
         }
     }
 
-    public PipelineManager pipelineManager; // PipelineManager
+    // public PipelineManager pipelineManager; // Pipeline Manager
+    public UnitManager enemyManager;   // Enemy Manager
 
     public enum GAME_STATUS
     {
@@ -64,7 +67,8 @@ public class Game : MonoBehaviour
     {
         this.Status = GAME_STATUS.OVER;
         UpdateUI();
-        this.pipelineManager.Stop();
+       // this.pipelineManager.Stop();
+        this.enemyManager.Stop();
     }
 
     // score method
@@ -85,7 +89,12 @@ public class Game : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // linearly interpolates between a and b by t
+        this.hpBar.value = Mathf.Lerp(this.hpBar.value,this.player.HP, 0.1f);
+
         UpdateUI();
+
+       
     }
 
 
@@ -98,16 +107,24 @@ public class Game : MonoBehaviour
 
         this.UpdateUI();
 
-        pipelineManager.StartRun();
+        // this.pipelineManager.StartRun();
+        this.enemyManager.StartRun();
+
         player.Fly();
+
+        this.hpBar.value = this.player.HP;
     }
 
     // restart game
     public void Restart()
     {
         this.Status = GAME_STATUS.READY;
-        this.pipelineManager.Init();
+        // this.pipelineManager.Init();
         this.player.Init();
+
         this.Score = 0;
+
+        this.player.HP = this.hpBar.maxValue;
+        this.hpBar.value = this.player.HP;
     }
 }

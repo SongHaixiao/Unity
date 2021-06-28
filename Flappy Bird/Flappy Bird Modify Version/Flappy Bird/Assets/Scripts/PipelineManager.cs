@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PipelineManager : MonoBehaviour
 {
-    public GameObject template;     // put in pipeline sample
+    public GameObject pipelineTemplate;     // put in pipeline sample
 
     List<Pipeline> pipelines = new List<Pipeline>();    // pipelines list to store pipelines
+
+    public float speed = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -76,12 +78,12 @@ public class PipelineManager : MonoBehaviour
                 pipelines[i].Init();
             }
 
-            // wait for 2 seconds
-            yield return new WaitForSeconds(2f);
+            // wait for speed default in 2 seconds
+            yield return new WaitForSeconds(speed);
         }
     }
 
-    // generate piepline
+    // generate single piepline
     void GeneratePipeline()
     {
         // generate pipeline when less than 3
@@ -90,7 +92,7 @@ public class PipelineManager : MonoBehaviour
             // clone the object original and returns the clone
             // template : clone target
             // this.transform : put these objects cloned as the childer object
-            GameObject obj = Instantiate(template, this.transform);
+            GameObject obj = Instantiate(pipelineTemplate, this.transform);
 
             Pipeline p = obj.GetComponent<Pipeline>();
             pipelines.Add(p);
