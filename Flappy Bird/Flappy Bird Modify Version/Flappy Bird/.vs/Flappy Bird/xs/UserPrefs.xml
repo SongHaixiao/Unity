@@ -1,32 +1,18 @@
 ﻿<Properties StartupConfiguration="{071E10C7-98A1-E18C-E3D1-1B0603687006}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Level.cs">
     <Files>
-      <File FileName="Assets/Scripts/Game.cs" Line="113" Column="1" />
-      <File FileName="Assets/Scripts/Element.cs" Line="13" Column="52" />
-      <File FileName="Assets/Scripts/Pipeline.cs" Line="22" Column="23" />
-      <File FileName="Assets/Scripts/NewClass.cs" Line="18" Column="28" />
-      <File FileName="Assets/Scripts/UnitManager.cs" Line="15" Column="59" />
-      <File FileName="Assets/Scripts/Unit.cs" Line="54" Column="1" />
-      <File FileName="Assets/Scripts/Player.cs" Line="42" Column="55" NotebookId="1" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="15" Column="26" NotebookId="1" />
+      <File FileName="Assets/Scripts/Missile.cs" Line="39" Column="69" />
+      <File FileName="Assets/Scripts/Element.cs" Line="35" Column="71" />
+      <File FileName="Assets/Scripts/Game.cs" Line="63" Column="24" />
+      <File FileName="Assets/Scripts/Player.cs" Line="69" Column="22" />
+      <File FileName="Assets/Scripts/Unit.cs" Line="36" Column="24" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="31" Column="20" />
+      <File FileName="Assets/Scripts/Level1.cs" Line="36" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Flappy Bird" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Player.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="66e4d5f9-fd2b-4ed8-b9f2-a42d9f25eba6" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8765d07a-9883-4b49-8c68-3059562b0c2f" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

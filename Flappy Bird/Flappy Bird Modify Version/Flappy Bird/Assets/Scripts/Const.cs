@@ -14,7 +14,9 @@ public enum SIDE
 // enemy type
 public enum ENEMY_TYPE
 {
-    NORMAL_ENEMY,   // 正常敌人
-    SWING_ENEMY,    // 摇摆敌人
+    NORMAL_ENEMY,   // normal enemy
+    SWING_ENEMY,    // swing enemy
+    BOSS,           // boss enemy
 }
+
 

@@ -55,27 +55,32 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        uiReady.SetActive(true);
         this.Status = GAME_STATUS.READY;
         this.player.OnDeath += Player_OnDeath;
-        this.player.OnScore = OnPlayerScore;
     }
 
     // when player is died
     // load death PanelGameOver
-    private void Player_OnDeath()
+    private void Player_OnDeath(Unit sender)
     {
         this.Status = GAME_STATUS.OVER;
         UpdateUI();
-       // this.pipelineManager.Stop();
         this.enemyManager.Stop();
     }
 
-    // score method
-    void OnPlayerScore(int score)
-    {
-        this.Score += score;
-    }
+    //private void Player_OnDeath(Unit sender)
+    //{
+    //    if (player.life <= 0)
+    //    {
+    //        this.Status = GAME_STATUS.OVER;
+    //        UnitManager.Instance.Clear();
+    //    }
+    //    else
+    //    {
+    //        player.Rebirth();
+    //    }
+    //}
+
 
 
     // update UI
@@ -93,14 +98,14 @@ public class Game : MonoBehaviour
         this.hpBar.value = Mathf.Lerp(this.hpBar.value,this.player.HP, 0.1f);
 
         UpdateUI();
-
-       
     }
 
 
     // game start
     public void StartGame()
     {
+        InitPlayer();
+
         this.Status = GAME_STATUS.INGAME;
 
         Debug.LogFormat(" Start Game : {0}", this.Status);
@@ -115,16 +120,46 @@ public class Game : MonoBehaviour
         this.hpBar.value = this.player.HP;
     }
 
+    //public void StartGame()
+    //{
+    //    InitPlayer();
+    //    this.Status = GAME_STATUS.INGAME;
+    //    Debug.LogFormat("StartGame:{0}", this.status);
+    //    player.Fly();
+    //    LoadLevel();
+    //}
+
+    // level load
+    //private void LoadLevel()
+    //{
+    //    LevelManager.Instance.LoadLevel(this.currentLevelId);
+    //    LevelManager.Instance.level.OnLevelEnd = OnLevelEnd;
+    //}
+
+    //// level end
+    //void OnLevelEnd(Level.LEVEL_RESULT result)
+    //{
+    //    if (result == Level.LEVEL_RESULT.SUCCESS)
+    //    {
+    //        this.currentLevelId++;
+    //        this.LoadLevel();
+    //    }
+    //    else
+    //    {
+    //        this.Status = GAME_STATUS.OVER;
+    //    }
+    //}
+
     // restart game
     public void Restart()
     {
         this.Status = GAME_STATUS.READY;
-        // this.pipelineManager.Init();
+        InitPlayer();
+    }
+
+    // initialize player
+    void InitPlayer()
+    {
         this.player.Init();
-
-        this.Score = 0;
-
-        this.player.HP = this.hpBar.maxValue;
-        this.hpBar.value = this.player.HP;
     }
 }
