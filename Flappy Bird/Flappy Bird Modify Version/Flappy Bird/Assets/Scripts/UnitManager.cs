@@ -88,9 +88,9 @@ public class UnitManager : MonoBehaviour
     }
 
     // generate single enemy
-    void GenerateEnemy(GameObject templates)
+    public Enemy GenerateEnemy(GameObject templates)
     {
-        if (templates == null) return;
+        if (templates == null) return null;
 
         // clone the object original and returns the clone
         // template : clone target
@@ -98,6 +98,8 @@ public class UnitManager : MonoBehaviour
         GameObject obj = Instantiate(templates, this.transform);
 
         Enemy e = obj.GetComponent<Enemy>();
-        enemies.Add(e);
+        this.enemies.Add(e);
+        return e;
+
     }
 }

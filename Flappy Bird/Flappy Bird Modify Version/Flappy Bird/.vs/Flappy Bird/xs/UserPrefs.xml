@@ -1,18 +1,33 @@
 ﻿<Properties StartupConfiguration="{071E10C7-98A1-E18C-E3D1-1B0603687006}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Level.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Boss.cs">
     <Files>
-      <File FileName="Assets/Scripts/Missile.cs" Line="39" Column="69" />
-      <File FileName="Assets/Scripts/Element.cs" Line="35" Column="71" />
-      <File FileName="Assets/Scripts/Game.cs" Line="63" Column="24" />
-      <File FileName="Assets/Scripts/Player.cs" Line="69" Column="22" />
-      <File FileName="Assets/Scripts/Unit.cs" Line="36" Column="24" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="31" Column="20" />
-      <File FileName="Assets/Scripts/Level1.cs" Line="36" Column="1" />
+      <File FileName="Assets/Scripts/SpawnRule.cs" Line="54" Column="44" IsPinned="True" />
+      <File FileName="Assets/Scripts/Level.cs" Line="48" Column="30" />
+      <File FileName="Assets/Scripts/Game.cs" Line="119" Column="1" />
+      <File FileName="Assets/Scripts/UnitManager.cs" Line="102" Column="18" />
+      <File FileName="Assets/Scripts/LevelManager.cs" Line="19" Column="19" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Boss.cs" Line="31" Column="1" />
+      <File FileName="Assets/Scripts/LevelEditor.cs" Line="41" Column="6" NotebookId="1" />
+      <File FileName="Assets/Scripts/Unit.cs" Line="173" Column="20" NotebookId="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Flappy Bird" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Boss.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8765d07a-9883-4b49-8c68-3059562b0c2f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="284509a7-54e1-46bd-b0b0-cd4e9e93cca2" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

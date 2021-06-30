@@ -18,6 +18,9 @@ public class Game : MonoBehaviour
 
     public Slider hpBar;    // hp bar slider
 
+    public Player currentPlayer;    // target
+
+    // score
     public int Score
     {
         get { return score; }
@@ -29,9 +32,12 @@ public class Game : MonoBehaviour
         }
     }
 
-    // public PipelineManager pipelineManager; // Pipeline Manager
-    public UnitManager enemyManager;   // Enemy Manager
+    public int currentLevelId = 1;
 
+    public UnitManager unitManager;   // Unit Manager
+    public LevelManager levelManager;   // Level Manager
+
+    // game status kinds
     public enum GAME_STATUS
     {
         READY,
@@ -65,7 +71,7 @@ public class Game : MonoBehaviour
     {
         this.Status = GAME_STATUS.OVER;
         UpdateUI();
-        this.enemyManager.Stop();
+        this.unitManager.Stop();
     }
 
     //private void Player_OnDeath(Unit sender)
@@ -112,12 +118,16 @@ public class Game : MonoBehaviour
 
         this.UpdateUI();
 
-        // this.pipelineManager.StartRun();
-        this.enemyManager.StartRun();
+        this.unitManager.StartRun();
 
         player.Fly();
 
         this.hpBar.value = this.player.HP;
+
+        this.levelManager.unitManager = this.unitManager;
+        this.levelManager.LoadLevel(this.currentLevelId);
+        this.levelManager.currentPlayer = this.player;
+
     }
 
     //public void StartGame()

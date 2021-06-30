@@ -24,9 +24,16 @@ public class Unit : MonoBehaviour
 
     protected float fireTimer = 0f;  // fire counter
 
-    public float HP = 100f;       // HP value
+    public float hp = 1000f;       // hp value
+
+    public float HP
+    {
+        get { return this.hp; }
+    }
 
     public float MaxHP = 100f;
+
+    public float Attack;    // attack power
 
     public int life = 3;
 
@@ -88,7 +95,7 @@ public class Unit : MonoBehaviour
         this.transform.position = initPos;  // reset  to inital position
         this.Idle();                        // set animition to Idle state
         this.death = false;                 // reset to alive
-        this.HP = this.MaxHP;               // reset to max hp
+        this.hp = this.MaxHP;               // reset to max hp
     }
 
     // fire method
@@ -134,7 +141,7 @@ public class Unit : MonoBehaviour
         if (this.death) return;
 
         this.life--;
-        this.HP = 0;
+        this.hp = 0;
         this.death = true;
         this.ani.SetTrigger("Die");
 
@@ -152,7 +159,7 @@ public class Unit : MonoBehaviour
     {
         Debug.Log("Unit : Damage Power : " + power);
 
-        this.HP -= power;
+        this.hp -= power;
 
         if (this.HP <= 0)
             this.Die();
@@ -161,8 +168,8 @@ public class Unit : MonoBehaviour
     // add hp
     public void AddHP(int hp)
     {
-        this.HP += hp;
-        if (this.HP > this.MaxHP)
-            this.HP = this.MaxHP;
+        this.hp += hp;
+        if (this.hp > this.MaxHP)
+            this.hp = this.MaxHP;
     }
 }
