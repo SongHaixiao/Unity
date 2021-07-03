@@ -876,7 +876,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 9022d116b829845acb219940cd01313f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -921,12 +921,13 @@ MonoBehaviour:
   fireRate: 3
   bulletTemplate: {fileID: 2443533007344248437, guid: a308f1a14b1304def9ea38c9ec9c1d01,
     type: 3}
-  HP: 50
-  MaxHP: 1000
+  hp: 1
+  MaxHP: 30
+  Attack: 2
   life: 3
   side: 2
   firePoint: {fileID: 1185940918}
-  destroyOnDeath: 0
+  destroyOnDeath: 1
   lifeTime: 999
   enemyType: 2
   range: {x: 0, y: 7}

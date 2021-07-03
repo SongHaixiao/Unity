@@ -19,4 +19,10 @@ public enum ENEMY_TYPE
     BOSS,           // boss enemy
 }
 
-
+// game status kinds
+public enum GAME_STATUS
+{
+    READY,
+    INGAME,
+    OVER
+}

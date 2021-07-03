@@ -5,6 +5,7 @@ using UnityEditor;
 
 
 [CustomEditor(typeof(Level))]
+
 public class LevelEditor : Editor
 {
     // self define Level Editor

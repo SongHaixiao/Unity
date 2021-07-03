@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  direction: -1
+  direction: {x: 0, y: 0, z: 0}
   side: 1
   power: 1
   lifeTime: 3

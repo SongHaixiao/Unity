@@ -43,9 +43,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f6b8c01c12d34cea897d51e103ebf92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Monster: {fileID: 1709671898, guid: d3660ca3d86cc41dc8e97e7162a876a8, type: 3}
+  Monster: {fileID: 5606206125072570869, guid: d3660ca3d86cc41dc8e97e7162a876a8, type: 3}
   InitTime: 10
-  Period: 3
-  MaxNum: 15
-  HP: 2
-  Attack: 1
+  Period: 5
+  MaxNum: 10
+  HP: 1
+  Attack: 3
+  dropRuleTemplate: {fileID: 4868830503175108307, guid: 1e1ced741422346b69f9738e2d21eb74,
+    type: 3}

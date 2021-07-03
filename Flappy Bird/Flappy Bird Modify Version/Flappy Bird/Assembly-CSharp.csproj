@@ -64,20 +64,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Level\Item.cs" />
-    <Compile Include="Assets\Scripts\Boss.cs" />
     <Compile Include="Assets\Scripts\Const.cs" />
-    <Compile Include="Assets\Scripts\Element.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Game.cs" />
-    <Compile Include="Assets\Scripts\Level.cs" />
+    <Compile Include="Assets\Scripts\Item\Item.cs" />
+    <Compile Include="Assets\Scripts\Item\ItemDropRule.cs" />
+    <Compile Include="Assets\Scripts\Level\Level.cs" />
+    <Compile Include="Assets\Scripts\Level\SpawnRule.cs" />
     <Compile Include="Assets\Scripts\LevelEditor.cs" />
-    <Compile Include="Assets\Scripts\LevelManager.cs" />
-    <Compile Include="Assets\Scripts\Missile.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\SpawnRule.cs" />
-    <Compile Include="Assets\Scripts\Unit.cs" />
-    <Compile Include="Assets\Scripts\UnitManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\UnitManager.cs" />
+    <Compile Include="Assets\Scripts\Unit\Boss.cs" />
+    <Compile Include="Assets\Scripts\Unit\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Unit\Player.cs" />
+    <Compile Include="Assets\Scripts\Unit\Unit.cs" />
+    <Compile Include="Assets\Scripts\Utilities\DelayActive.cs" />
+    <Compile Include="Assets\Scripts\Utilities\Element.cs" />
+    <Compile Include="Assets\Scripts\Utilities\GameUtil.cs" />
+    <Compile Include="Assets\Scripts\Utilities\Missile.cs" />
+    <Compile Include="Assets\Scripts\Utilities\MonoSingleton.cs" />
+    <Compile Include="Assets\Scripts\Utilities\Singleton.cs" />
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>/Users/benjiaminsong/GitHub/Unity-Study/Flappy Bird/Flappy Bird Modify Version/Flappy Bird/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
