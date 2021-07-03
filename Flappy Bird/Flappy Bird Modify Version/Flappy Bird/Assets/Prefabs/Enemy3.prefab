@@ -274,7 +274,7 @@ MonoBehaviour:
   side: 2
   firePoint: {fileID: 517865409302599250}
   destroyOnDeath: 1
-  destroyTime: 0.9
+  destroyTime: 0.6
   lifeTime: 4
   enemyType: 0
   range: {x: -2, y: 5}
